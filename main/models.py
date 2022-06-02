@@ -19,11 +19,12 @@ class HomeNews(models.Model):
 
 
 class About(models.Model):
-    text_about = models.TextField('Про нас')
-
+    title = models.CharField('Название', max_length=90)
+    photo = models.ImageField(upload_to='img', null=True, blank=True)
+    texts = models.TextField('Текст про нас', null=True)
 
     def __str__(self):
-        return self.text_about
+        return self.title
 
 
     class Meta:

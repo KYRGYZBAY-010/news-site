@@ -4,10 +4,11 @@
 {% block title %} Про нас {% endblock %}
 
 {% block content %}
-<div align="center" class="ab_div"><br>
-    <h3 class="ab-p">Мы всегда первыми узнаём о событиях</h3>
+<div class="ab_div"><br>
     {% for j in abouts %}
-        <p class="about_p">{{ j.text_about }}</p><br>
+        <h5 style="color: #fff; margin-left: 20px; margin-bottom: 20px;">{{ j.title }}</h5>
+        <p class="about_p">{{ j.texts }}</p>
+        <img class="img_about" src="{{ j.photo.url }}" alt="">
     {% endfor %}
 
 </div>

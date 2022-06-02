@@ -92,11 +92,20 @@ aside{
 }
 
 .about_p{
-    width: 70%;
+    width: 50%;
     font-size: 15px;
     color: #fff;
-    margin: 0px;
+    margin: 20px;
 }
+.img_about{
+    position: relative;
+    left: 190mm;
+    top: -50mm;
+    width: 10cm;
+    height: 6cm;
+    border-radius: 20px;
+}
+
 .news-div{
     background: url("../img/nebula.jpg");
     background-attachment: fixed;
@@ -175,6 +184,8 @@ aside{
     margin-top: 20px;
     margin-left: 360px;
 }
+
+
 
 /* footer */
 

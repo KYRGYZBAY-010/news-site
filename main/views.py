@@ -34,6 +34,9 @@ def creates(request):
     }
     return render(request, 'main/creates.html', data)
 
+def community(request):
+    return render(request, 'main/community.html')
+
 
 
 class HomeDetail(DetailView):
