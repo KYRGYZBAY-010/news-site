@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <div class="detail">
+            <h1>{{ article.title }}</h1>
+            <p>Опубликован {{ article.date }}</p>
+            <p>{{ article.full_text }}</p>
+        </div>
+    </div>
+{% endblock %}

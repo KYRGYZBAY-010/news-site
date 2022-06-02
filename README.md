@@ -1,1 +1,0 @@
-# KYRGYZBAY-010

@@ -1,0 +1,217 @@
+a{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style-type: none;
+}
+
+.img_pharm{
+    width:70px;
+    height:70px;
+}
+
+
+.eler-war{
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    display: inline-block;
+}
+.eler{
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.eler-war{
+    clear: both;
+    width: 400px;
+    margin: 20px 34px;
+    text-align: center;
+}
+
+
+
+body{
+    background-color:#fff;
+}
+
+aside{
+    background-color: #416360;
+    width: 100%;
+    height:70px;
+    display: flex;
+}
+.list{
+    display: inline-block;
+    margin:20px 40px;
+    color: #fff;
+    font-size: 20px;
+}
+.lists{
+    float: right;
+}
+.logo-img{
+    width: 15mm;
+    height: 15mm;
+    margin-top: 3mm;
+    margin-left: 5mm;
+}
+.logo{
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    top: 2mm;
+    left: 2mm;
+    color: #fff;
+}
+.lists a li{
+    transition: all .06 ease;
+}
+
+.lists a li:hover{
+    color: #2d9dd5;
+    transform: scale(1.09);
+}
+.ab_divs{
+    background-image: url("../img/earth-7.jpg");
+    background-attachment: fixed;
+}
+.rows{
+    margin-bottom: 15mm;
+}
+.ab_div{
+    background: url("../img/horizon.jpg");
+    background-attachment: fixed;
+}
+
+.ab-p{
+    width: 70%;
+    color: #fff;
+}
+
+.about_p{
+    width: 70%;
+    font-size: 15px;
+    color: #fff;
+    margin: 0px;
+}
+.news-div{
+    background: url("../img/nebula.jpg");
+    background-attachment: fixed;
+}
+
+.in-p{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    position: right;
+}
+
+.dws-menu *{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.dws-menu ul,
+.dws-menu ol {
+    position:absolute;
+    list-style: none;
+    top: 20px;
+    right: 20px;
+}
+.dws-menu > ul{
+    display: flex;
+    justify-content: center;
+}
+.dws-menu ul >li{
+    margin-left: 40px;
+}
+.dws-menu li ul{
+    position: absolute;
+    min-width: 170px;
+    display: none;
+}
+.dws-menu li > ul{
+    margin-top: 23px;
+}
+.dws-menu li > ul li{
+    border: 1px solid #797979;
+}
+.dws-menu li > ul li a{
+    padding: 10px;
+    color: #fff;
+    text-transform: none;
+}
+.dws-menu li:hover > ul{
+    display: block;
+}
+
+.igm-home{
+    width: 15cm;
+    height: 10cm;
+    margin-left: 390px;
+    margin-top: 10mm;
+
+}
+
+.detail >h1{
+    text-align: center;
+    background-color: #486573;
+    border-radius: 30px;
+    margin-top: 10px;
+    color: #fff;
+}
+.detail >p{
+    text-align: center;
+    margin-left: 20mm;
+    margin-right: 20mm;
+}
+.imgfile{
+    width: 15cm;
+    height: 9cm;
+    margin-top: 20px;
+    margin-left: 360px;
+}
+
+/* footer */
+
+.footers{
+    background-color: dimgray;
+    width: 100%;
+    height: 90px;
+    margin-top: 0;
+}
+
+.foot_li{
+    display: block;
+}
+.footers ion-icon{
+    background-color: #4a4a4a;
+    width: 30px;
+    height: 5.6pc;
+}
+.footers ion-icon:hover{
+    background-color: #fff;
+}
+
+.alert-warning{
+    background-color: #d0d9ce;
+    clear: both;
+    width: 400px;
+    margin: 20px 34px;
+    text-align: center;
+}
+
+form{
+    margin-left: 32px;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.hhh{
+    text-align: center;
+}
+

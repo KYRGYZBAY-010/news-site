@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %} Про нас {% endblock %}
+
+{% block content %}
+<div align="center" class="ab_div"><br>
+    <h3 class="ab-p">Мы всегда первыми узнаём о событиях</h3>
+    {% for j in abouts %}
+        <p class="about_p">{{ j.text_about }}</p><br>
+    {% endfor %}
+
+</div>
+{% endblock %}
+

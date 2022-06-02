@@ -1,0 +1,30 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+
+{% block title %} Главная страница {% endblock %}
+
+{% block content %}
+<div class="ab_divs">
+     <br>
+    <p class="in-p">Здесь вы увидете новости мира!</p><br>
+    <div class="container padding">
+        <div class="row padding">
+            {% for el in homenews %}
+                <div class="col-md-4 rows">
+                    <div class="card">
+                        {% if el.img %}
+                        <img src="{{ el.img.url }}" alt="" class="card-img-top">
+                        {% endif %}
+                        <div class="card-body">
+                            <h4 class="card-title">{{ el.title }}</h4>
+                            <p class="card-text">{{ el.dte }}</p>
+                            <a href="{% url 'detail_home' el.id %}" class="btn btn-warning">Читать</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

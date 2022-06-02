@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+
+{% block title %} {{ home.title }} {% endblock %}
+
+{% block content %}
+<div class="features">
+    <div class="detail">
+        <img class="imgfile" src="{{ home.img.url }}" alt="">
+        <h1>{{ home.title }}</h1>
+        <p>{{ home.date }}</p>
+        <p>{{ home.description }}</p>
+    </div>
+</div>
+{% endblock %}
