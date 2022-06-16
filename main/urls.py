@@ -7,5 +7,6 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('creates/', views.creates, name='creates'),
     path('<int:pk>', views.HomeDetail.as_view(), name='detail_home'),
+    path('update/<int:pk>', views.HomeUpdate.as_view(), name='update_home'),
     path('community/', views.community, name='community')
 ]

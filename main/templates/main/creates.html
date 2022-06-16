@@ -5,7 +5,7 @@
 
 {% block content %}
     <div align="center" class="features">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token %} 
             <h>Форма по добавлению статьи <br>  На "Главную страницу"</h5> <br>         
             {{ forms.title }}<br>

@@ -7,15 +7,16 @@ class HomeNews(models.Model):
     description = models.TextField('Описание')
     date = models.DateTimeField('Дата и время публикации')
 
-
-
     def __str__(self):
         return self.title
-
 
     class Meta:
         verbose_name = 'Новости на главном странице'
         verbose_name_plural = 'Новости на главном странице'
+
+
+
+
 
 
 class About(models.Model):

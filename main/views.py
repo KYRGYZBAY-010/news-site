@@ -1,13 +1,12 @@
 from django.shortcuts import render, redirect
 from pkg_resources import working_set
 from main.models import HomeNews, About
-from django.views.generic import DetailView 
+from django.views.generic import DetailView, UpdateView
 from .forms import HomeNewsForm
 
 
 def index(request):
     homenews = HomeNews.objects.order_by('-date')
-    print(homenews)
     return render(request, 'main/index.html', {'homenews': homenews})
 
 
@@ -16,11 +15,27 @@ def about(request):
     return render(request, 'main/about.html', {'abouts': abouts})
 
 
+class HomeDetail(DetailView):
+    model = HomeNews
+    template_name = 'main/details_main.html'
+    context_object_name = 'home'
+
+
+
+class HomeUpdate(UpdateView):
+    model = HomeNews
+    template_name = 'main/update.html'
+
+    fields = ['img','title','description','date']
+    success_url ="/"
+
+
 def creates(request):
 
     error = ''
     if request.method == 'POST':
-        form = HomeNewsForm(request.POST)
+        print('enter')
+        form = HomeNewsForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('home')
@@ -36,10 +51,3 @@ def creates(request):
 
 def community(request):
     return render(request, 'main/community.html')
-
-
-
-class HomeDetail(DetailView):
-    model = HomeNews
-    template_name = 'main/details_main.html'
-    context_object_name = 'home'

@@ -19,6 +19,7 @@
                         <div class="card-body">
                             <h4 class="card-title">{{ el.title }}</h4>
                             <p class="card-text">{{ el.dte }}</p>
+                            <a class="btn btn-warning" href="{% url 'update_home' el.id %}">изменить</a>
                             <a href="{% url 'detail_home' el.id %}" class="btn btn-warning">Читать</a>
                         </div>
                     </div>

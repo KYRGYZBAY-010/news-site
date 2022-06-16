@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %} Форма по добавлению статьи{% endblock %}
+
+{% block content %}
+    <div align="center" class="features">
+        <form method="post">
+            {% csrf_token %} 
+            <h>Форма по добавлению статьи <br>  На страницу 'Новости дня'</h5><br>
+                {{ form.as_p }}     
+            <button class="btn btn-success" type="submit">Добавить статью</button>
+        </form>
+    </div>
+
+{% endblock %}
