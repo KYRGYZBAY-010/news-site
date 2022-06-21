@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
-from pkg_resources import working_set
 from main.models import HomeNews, About
-from django.views.generic import DetailView, UpdateView
+from django.views.generic import DetailView, UpdateView, DeleteView
 from .forms import HomeNewsForm
 
 
@@ -21,20 +20,25 @@ class HomeDetail(DetailView):
     context_object_name = 'home'
 
 
+class HomeDelete(DeleteView):
+    model = HomeNews
+    template_name = 'main/delete.html'
+    success_url = '/'
+
+
+
 
 class HomeUpdate(UpdateView):
     model = HomeNews
     template_name = 'main/update.html'
-
-    fields = ['img','title','description','date']
-    success_url ="/"
+    form_class = HomeNewsForm
+    success_url = '/'
 
 
 def creates(request):
 
     error = ''
     if request.method == 'POST':
-        print('enter')
         form = HomeNewsForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()

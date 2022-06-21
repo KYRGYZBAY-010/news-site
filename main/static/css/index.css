@@ -185,6 +185,18 @@ aside{
     margin-left: 360px;
 }
 
+.delet{
+    height: 100%;
+}
+.delform{
+    background-color: #8a8a8a;
+    width: 15cm;
+    height: 5cm;
+    margin-top: 5cm;
+    color: #fff;
+    border-radius: 40px;
+    box-shadow: 15px 15px 2px 5px rgba(15, 12, 154, 0.2);
+}
 
 
 /* footer */

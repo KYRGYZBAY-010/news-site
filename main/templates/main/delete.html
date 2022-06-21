@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}Форма по удалению статьи{% endblock %}
+
+{% block content %}
+    <div align="center" class="delet">
+        <form class="delform" method="post" enctype="multipart/form-data">
+            {% csrf_token %} 
+          <br><h> Э ты точно хочеш удалить эту статью <br>  из "Главной страницы"</h5><h1>🧐</h1>
+            <button class="btn btn-danger" type="submit">Да удалить статью</button>
+        </form>
+    </div>
+{% endblock %}

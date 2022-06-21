@@ -11,6 +11,10 @@
         <h1>{{ home.title }}</h1>
         <p>{{ home.date }}</p>
         <p>{{ home.description }}</p>
+        <div align="center">
+            <a href="{% url 'delete_home' home.id %}" class="btn btn-danger">Удалить</a>
+            <a href="{% url 'update_home' home.id %}" class="btn btn-warning">Изменить</a>
+        </div><br>
     </div>
 </div>
 {% endblock %}
